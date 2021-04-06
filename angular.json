@@ -23,6 +23,8 @@
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
             "aot": true,
+            "baseHref" : "/cnft/",
+            "deployUrl": "/cnft/",
             "assets": [
               "src/favicon.ico",
               "src/assets"
