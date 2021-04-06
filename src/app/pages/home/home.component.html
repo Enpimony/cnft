@@ -1,6 +1,7 @@
-<h1 class="title">
-	Hello World
-</h1>
-<p class="subtitle">
-	My first website with <strong>Bulma</strong>!
-</p>
+<h1 class="title">Cardano NFT Projects</h1>
+
+<div class="columns is-multiline">
+  <div class="column is-one-quarter" *ngFor="let project of projectList">
+		<enp-project-card [project]="project"></enp-project-card>
+	</div>
+</div>
