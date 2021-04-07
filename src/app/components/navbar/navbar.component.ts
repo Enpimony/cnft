@@ -7,6 +7,7 @@ import { Component, OnInit } from "@angular/core";
 })
 export class NavbarComponent implements OnInit {
   public openedModal = false;
+  public isMenuOpened = false;
   constructor() {}
 
   ngOnInit(): void {}
@@ -17,5 +18,9 @@ export class NavbarComponent implements OnInit {
 
   public closeModal() {
     this.openedModal = false;
+  }
+
+  toggleMenu() {
+    this.isMenuOpened = !this.isMenuOpened;
   }
 }
