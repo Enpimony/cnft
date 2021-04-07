@@ -3,9 +3,14 @@ import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 
 import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
+import {googleAnalyticsHeadScripts} from './assets/analytics';
 
 if (environment.production) {
   enableProdMode();
+}
+
+if (environment.analyticsCode) {
+  googleAnalyticsHeadScripts();
 }
 
 platformBrowserDynamic().bootstrapModule(AppModule)
