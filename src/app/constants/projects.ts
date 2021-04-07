@@ -161,7 +161,7 @@ export const PROJECT_LIST = [
     mintedToken: '',
     dateRelease: '',
     policyID: '5e889bcb83b884bb6d768cfc483845cd6ccee79c2b5a4a15dae7ff47',
-    status: STATUS_IN_PROGRESS,
+    status: STATUS_TO_RELEASE,
   },
   {
     name: '2140 by withspaces',
