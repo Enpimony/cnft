@@ -2,8 +2,23 @@ export const STATUS_RELEASED = 'RELEASED';
 export const STATUS_IN_PROGRESS = 'IN_PROGRESS';
 export const STATUS_TO_RELEASE = 'TO_RELEASE';
 
-export const PROJECT_LIST = [
-  {
+export const SPACEBUDZ_METADATA = {
+   d5e6bf0500378d4f0da4e8dde6becec7621cd8cbf5cbb9b87013d4cc: {
+      SpaceBud1919: {
+         arweaveId: "KTiDTKAr2zKcHYsACkvi3SB-OKyUR358QPvQYFVZY7w",
+         image: "ipfs://QmSRKfc5RNpv3dEib2h9ZAh3jMCrWrJu7p1g8HKCBu1MaS",
+         name: "SpaceBud #1919",
+         traits: [
+            "Chestplate",
+            "Belt",
+            "VR"
+         ],
+         type: "Alien"
+      }
+   }
+};
+
+export const SPACEBUDZ_PROJECT = {
     name: 'SpaceBudz',
     avatar: 'assets/img/avatar/SpaceBudz.jpg',
     banner: 'assets/img/banner/SpaceBudz.jpeg',
@@ -14,11 +29,17 @@ export const PROJECT_LIST = [
     telegram: 'https://t.me/spacebudz',
     youtube: null,
     webpage: 'https://spacebudz.io/',
-    mintedToken: '',
+    tokenInfo: '10.000 tokens minted and released',
+    priceInfo: 'Starting at 10 ADA each, increasing the price every 1000 tokens (10, 20, ..., 90, 100)',
     dateRelease: '',
-    policyID: null,
+    metadata: SPACEBUDZ_METADATA,
+    policyID: 'd5e6bf0500378d4f0da4e8dde6becec7621cd8cbf5cbb9b87013d4cc',
     status: STATUS_RELEASED,
-  },
+    lastUpdated: '07 April 2021',
+  };
+
+export const PROJECT_LIST = [
+  SPACEBUDZ_PROJECT,
   {
     name: 'CardanoBits',
     avatar: 'assets/img/avatar/CardanoBits.jpg',

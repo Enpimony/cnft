@@ -1,0 +1,37 @@
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-3by1">
+      <img src="{{ project.banner }}" alt="{{ project.name }} banner" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="{{ project.avatar }}" alt="{{ project.name }} avatar" />
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">{{ project.name }}</p>
+        <p class="subtitle is-6">@{{ project.twitter }}</p>
+      </div>
+    </div>
+
+    <div class="content">
+			<div class="columns">
+				<div class="column is-desktop-half">
+					<strong>Tokens</strong>: {{project.tokenInfo}}<br>
+					<strong>Price</strong>: {{project.priceInfo}}<br>
+					<ng-container *ngIf="project.policyID">
+						<strong>PolicyID</strong>: <a href="https://cardanoscan.io/tokenPolicy/{{project.policyID}}">{{project.policyID}}</a><br>
+					</ng-container>
+					<strong>Last updated</strong>: {{project.lastUpdated}}<br>
+				</div>
+				<div class="column is-desktop-half">
+					<p class="title is-4">Metadata</p>
+					<pre>{{project.metadata | json}}</pre>
+				</div>
+			</div>
+    </div>
+  </div>
+</div>
