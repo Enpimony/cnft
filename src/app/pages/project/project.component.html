@@ -20,12 +20,34 @@
     <div class="content">
 			<div class="columns">
 				<div class="column is-desktop-half">
-					<strong>Tokens</strong>: {{project.tokenInfo}}<br>
-					<strong>Price</strong>: {{project.priceInfo}}<br>
-					<ng-container *ngIf="project.policyID">
-						<strong>PolicyID</strong>: <a href="https://cardanoscan.io/tokenPolicy/{{project.policyID}}">{{project.policyID}}</a><br>
+					<div class="box">
+						<strong>Tokens</strong>: {{project.tokenInfo}}<br>
+						<strong>Price</strong>: {{project.priceInfo}}<br>
+						<ng-container *ngIf="project.policyID">
+							<strong>PolicyID</strong>: <a href="https://cardanoscan.io/tokenPolicy/{{project.policyID}}">{{project.policyID}}</a><br>
+						</ng-container>
+						<strong>Last updated</strong>: {{project.lastUpdated}}<br>
+					</div>
+					<ng-container *ngIf="project.rarity">
+						<p class="title is-4">Rarity</p>
+						<table class="table is-narrow is-hoverable is-striped">
+							<thead>
+								<tr>
+									<th>Type</th>
+									<th>Number</th>
+									<th>Rarity</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr *ngFor="let row of project.rarity">
+									<td>{{row.type}}</td>
+									<td>{{row.number}}</td>
+									<td>{{row.rarity}}</td>
+								</tr>
+							</tbody>
+						</table>
 					</ng-container>
-					<strong>Last updated</strong>: {{project.lastUpdated}}<br>
+
 				</div>
 				<div class="column is-desktop-half">
 					<p class="title is-4">Metadata</p>

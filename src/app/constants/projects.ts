@@ -3,43 +3,115 @@ export const STATUS_IN_PROGRESS = 'IN_PROGRESS';
 export const STATUS_TO_RELEASE = 'TO_RELEASE';
 
 export const SPACEBUDZ_METADATA = {
-   d5e6bf0500378d4f0da4e8dde6becec7621cd8cbf5cbb9b87013d4cc: {
-      SpaceBud1919: {
-         arweaveId: "KTiDTKAr2zKcHYsACkvi3SB-OKyUR358QPvQYFVZY7w",
-         image: "ipfs://QmSRKfc5RNpv3dEib2h9ZAh3jMCrWrJu7p1g8HKCBu1MaS",
-         name: "SpaceBud #1919",
-         traits: [
-            "Chestplate",
-            "Belt",
-            "VR"
-         ],
-         type: "Alien"
-      }
-   }
+  d5e6bf0500378d4f0da4e8dde6becec7621cd8cbf5cbb9b87013d4cc: {
+    SpaceBud1919: {
+      arweaveId: 'KTiDTKAr2zKcHYsACkvi3SB-OKyUR358QPvQYFVZY7w',
+      image: 'ipfs://QmSRKfc5RNpv3dEib2h9ZAh3jMCrWrJu7p1g8HKCBu1MaS',
+      name: 'SpaceBud #1919',
+      traits: [
+        'Chestplate',
+        'Belt',
+        'VR'
+      ],
+      type: 'Alien'
+    }
+  }
 };
 
+export const FINGERMONSTERS_METADATA = {
+  c48399365969a5b3e08640d41bdd6581ecc814ff6cd5bb081556ffb1: {
+    Wave1Aqua000: {
+      id: 0,
+      image: 'ipfs://ipfs/QmVpmdPsCdgbq5CDpCsJ7pmxNk1fnbkWSDmgRhDqCh6J9b',
+      name: 'Finger Monsters Aqua [000]'
+    },
+  },
+  copyright: 'Copyright Finger Monsters 2021; all rights reserved',
+  publisher: [
+    'cnft.io',
+    'www.fingermonsters.com'
+  ],
+  version: 1
+};
+
+export const FINGERMONSTERS_RARITY = [
+  { type: 'Flame', number: 150, rarity: 15 },
+  { type: 'Spot', number: 150, rarity: 15 },
+  { type: 'Tenti', number: 150, rarity: 15 },
+  { type: 'Buzz Vegas', number: 125, rarity: 12.5 },
+  { type: 'Drool', number: 100, rarity: 10 },
+  { type: 'Bogey', number: 50, rarity: 5 },
+  { type: 'Slick', number: 50, rarity: 5 },
+  { type: 'Splodge', number: 50, rarity: 5 },
+  { type: 'Aqua', number: 50, rarity: 5 },
+  { type: 'Eyes', number: 25, rarity: 2.5 },
+  { type: 'Tongue', number: 25, rarity: 2.5 },
+  { type: 'Claws', number: 20, rarity: 2 },
+  { type: 'Scales', number: 20, rarity: 2 },
+  { type: 'Boggle', number: 10, rarity: 1 },
+  { type: 'Spike', number: 5, rarity: 0.5 },
+  { type: 'Wings', number: 5, rarity: 0.5 },
+  { type: 'Red', number: 5, rarity: 0.5 },
+  { type: 'Croco', number: 2, rarity: 0.2 },
+  { type: 'Glob', number: 2, rarity: 0.2 },
+  { type: 'Fin', number: 1, rarity: 0.1 },
+  { type: 'Golden1', number: 1, rarity: 0.1 },
+  { type: 'Golden2', number: 1, rarity: 0.1 },
+  { type: 'Golden3', number: 1, rarity: 0.1 },
+  { type: 'Golden4', number: 1, rarity: 0.1 },
+  { type: 'Golden5', number: 1, rarity: 0.1 },
+];
+
 export const SPACEBUDZ_PROJECT = {
-    name: 'SpaceBudz',
-    avatar: 'assets/img/avatar/SpaceBudz.jpg',
-    banner: 'assets/img/banner/SpaceBudz.jpeg',
-    twitter: 'spacebudzNFT',
-    facebook: null,
-    instagram: null,
-    discord: 'https://discord.com/invite/ePJZBVwQNq',
-    telegram: 'https://t.me/spacebudz',
-    youtube: null,
-    webpage: 'https://spacebudz.io/',
-    tokenInfo: '10.000 tokens minted and released',
-    priceInfo: 'Starting at 10 ADA each, increasing the price every 1000 tokens (10, 20, ..., 90, 100)',
-    dateRelease: '',
-    metadata: SPACEBUDZ_METADATA,
-    policyID: 'd5e6bf0500378d4f0da4e8dde6becec7621cd8cbf5cbb9b87013d4cc',
-    status: STATUS_RELEASED,
-    lastUpdated: '07 April 2021',
-  };
+  hasDetailView: true,
+  detailViewUrl: ['/', 'SpaceBudz'],
+  name: 'SpaceBudz',
+  avatar: 'assets/img/avatar/SpaceBudz.jpg',
+  banner: 'assets/img/banner/SpaceBudz.jpeg',
+  twitter: 'spacebudzNFT',
+  facebook: null,
+  instagram: null,
+  discord: 'https://discord.com/invite/ePJZBVwQNq',
+  telegram: 'https://t.me/spacebudz',
+  youtube: null,
+  reddit: null,
+  webpage: 'https://spacebudz.io/',
+  tokenInfo: '10.000 tokens minted and released',
+  priceInfo: 'Starting at 10 ADA each, increasing the price every 1000 tokens (10, 20, ..., 90, 100)',
+  dateRelease: '',
+  metadata: SPACEBUDZ_METADATA,
+  policyID: ['d5e6bf0500378d4f0da4e8dde6becec7621cd8cbf5cbb9b87013d4cc'],
+  status: STATUS_RELEASED,
+  lastUpdated: '07 April 2021',
+};
+
+export const FINGERMONSTERS_PROJECT = {
+  hasDetailView: true,
+  detailViewUrl: ['/', 'FingerMonsters'],
+  name: 'Finger monsters',
+  avatar: 'assets/img/avatar/Finger monsters.jpg',
+  banner: 'assets/img/banner/Finger monsters.jpeg',
+  twitter: 'CNFT_IO',
+  facebook: null,
+  instagram: null,
+  discord: null,
+  telegram: null,
+  youtube: null,
+  reddit: null,
+  webpage: 'https://www.fingermonsters.com/',
+  tokenInfo: '1.000 tokens minted and released @ Wave1',
+  priceInfo: '50 ADA each @ Wave1',
+  dateRelease: '',
+  metadata: FINGERMONSTERS_METADATA,
+  rarity: FINGERMONSTERS_RARITY,
+  policyID: ['c48399365969a5b3e08640d41bdd6581ecc814ff6cd5bb081556ffb1'],
+  status: STATUS_RELEASED,
+  lastUpdated: '08 April 2021',
+};
 
 export const PROJECT_LIST = [
   SPACEBUDZ_PROJECT,
+  FINGERMONSTERS_PROJECT,
   {
     name: 'CardanoBits',
     avatar: 'assets/img/avatar/CardanoBits.jpg',
@@ -50,6 +122,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: 'https://t.me/CardanoBitsOfficial',
     youtube: null,
+    reddit: null,
     webpage: 'https://cardanobits.art/',
     mintedToken: '',
     dateRelease: '',
@@ -66,6 +139,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'https://www.professorcardano.com/',
     mintedToken: '',
     dateRelease: '',
@@ -82,6 +156,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'https://adaknitties.com/',
     mintedToken: '',
     dateRelease: '',
@@ -98,6 +173,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'https://www.cardanokidz.com/',
     mintedToken: '',
     dateRelease: '',
@@ -114,6 +190,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'https://adadolls.com/',
     mintedToken: '',
     dateRelease: '',
@@ -130,6 +207,7 @@ export const PROJECT_LIST = [
     discord: 'https://discord.com/invite/wbBVZrCH',
     telegram: null,
     youtube: 'https://www.youtube.com/channel/UCDxsNWLuJHH1T9KYHErvp4w',
+    reddit: null,
     webpage: 'https://madinart.io/',
     mintedToken: '',
     dateRelease: '',
@@ -146,6 +224,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'https://stigma.cards/',
     mintedToken: '',
     dateRelease: '',
@@ -162,6 +241,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'https://cryptomayor.io/',
     mintedToken: '',
     dateRelease: '',
@@ -178,6 +258,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'https://www.cardanokingsandqueens.com/',
     mintedToken: '',
     dateRelease: '',
@@ -194,6 +275,7 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'http://withspaces.online/nfts/ch1/rodr160mugs/',
     mintedToken: '',
     dateRelease: '',
@@ -210,11 +292,46 @@ export const PROJECT_LIST = [
     discord: null,
     telegram: null,
     youtube: null,
+    reddit: null,
     webpage: 'https://crypties.co/',
     mintedToken: '',
     dateRelease: '',
     policyID: null,
     status: STATUS_TO_RELEASE,
-  }
+  },
+  {
+    name: 'Cardano Comics',
+    avatar: 'assets/img/avatar/Cardano Comics.jpg',
+    banner: 'assets/img/banner/Cardano Comics.jpeg',
+    twitter: 'CardanoComics',
+    facebook: null,
+    instagram: null,
+    discord: null,
+    telegram: null,
+    youtube: null,
+    reddit: 'https://www.reddit.com/r/CardanoComics/',
+    webpage: 'https://www.cardanocomics.io/',
+    mintedToken: '',
+    dateRelease: '',
+    policyID: null,
+    status: STATUS_TO_RELEASE,
+  },
+  {
+    name: 'Cardano Gods',
+    avatar: 'assets/img/avatar/Cardano Gods.jpg',
+    banner: 'assets/img/banner/Cardano Gods.jpeg',
+    twitter: 'CardanoGods',
+    facebook: null,
+    instagram: 'https://www.instagram.com/cardanogods/',
+    discord: 'https://discord.gg/xmVWPc3V',
+    telegram: null,
+    youtube: null,
+    reddit: 'https://www.reddit.com/r/CardanoGods/',
+    webpage: 'https://www.cardanogods.com/',
+    mintedToken: '',
+    dateRelease: '',
+    policyID: null,
+    status: STATUS_TO_RELEASE,
+  },
 ];
 

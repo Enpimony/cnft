@@ -24,11 +24,14 @@
       <!--				<span class="tag is-info" *ngIf="project.status === STATUS_IN_PROGRESS">In progress</span>-->
       <!--				<span class="tag is-light" *ngIf="project.status === STATUS_TO_RELEASE">Pending</span>-->
       <!--			</div>-->
-      <ng-container *ngIf="project.webpage">
-        <a href="{{ project.webpage }}" target="_blank">Official web</a>
-        <br />
-      </ng-container>
-      <time>{{ project.lastUpdated }}</time>
+			<div class="columns">
+				<div class="column is-half" *ngIf="project.webpage">
+        	<a href="{{ project.webpage }}" target="_blank">Official web</a>
+				</div>
+				<div class="column is-half" *ngIf="project.hasDetailView">
+					<a [routerLink]="project.detailViewUrl">More info</a>
+				</div>
+			</div>
     </div>
   </div>
   <footer class="card-footer">
@@ -88,6 +91,13 @@
       class="card-footer-item"
       *ngIf="project.youtube"
       ><i class="fab fa-youtube"></i
+    ></a>
+    <a
+      href="{{ project.reddit }}"
+      target="_blank"
+      class="card-footer-item"
+      *ngIf="project.reddit"
+      ><i class="fab fa-reddit"></i
     ></a>
   </footer>
 </div>
