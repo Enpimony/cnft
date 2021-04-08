@@ -4,11 +4,16 @@ import { AboutComponent } from "./pages/about/about.component";
 import { HomeComponent } from "./pages/home/home.component";
 import {ProjectComponent} from './pages/project/project.component';
 import {SPACEBUDZ_PROJECT} from './constants/projects';
+import { NewsPageComponent } from "./pages/news-page/news-page.component";
 
 const routes: Routes = [
   {
-    component: HomeComponent,
+    component: NewsPageComponent,
     path: ""
+  },
+  {
+    component: HomeComponent,
+    path: "projects"
   },
   {
     component: ProjectComponent,

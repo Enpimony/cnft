@@ -1,0 +1,14 @@
+<nav class="panel">
+    <p class="panel-heading">
+      
+    </p>
+    <a class="panel-block is-active"*ngFor="let news of newsList" > 
+        <span class="image is-48x48">
+               <img src="{{news.project.icon}}" title="{{news.project.name}}"/>
+        </span>
+        <span class="newsContent">
+            {{news.date}} - 
+            <a href='{{news.link}}'> {{news.title}}</a>
+        </span>
+      </a>
+</nav>
