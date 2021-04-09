@@ -3,7 +3,7 @@ import { RouterModule, Routes } from "@angular/router";
 import { AboutComponent } from "./pages/about/about.component";
 import { HomeComponent } from "./pages/home/home.component";
 import {ProjectComponent} from './pages/project/project.component';
-import {FINGERMONSTERS_PROJECT, SPACEBUDZ_PROJECT} from './constants/projects';
+import {CARDANOBITS_PROJECT, FINGERMONSTERS_PROJECT, SPACEBUDZ_PROJECT} from './constants/projects';
 import { NewsPageComponent } from "./pages/news-page/news-page.component";
 
 const routes: Routes = [
@@ -27,6 +27,13 @@ const routes: Routes = [
     path: "FingerMonsters",
     data: {
       project: FINGERMONSTERS_PROJECT
+    }
+  },
+  {
+    component: ProjectComponent,
+    path: "CardanoBits",
+    data: {
+      project: CARDANOBITS_PROJECT
     }
   },
   {

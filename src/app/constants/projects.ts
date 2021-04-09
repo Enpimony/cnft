@@ -109,26 +109,31 @@ export const FINGERMONSTERS_PROJECT = {
   lastUpdated: '08 April 2021',
 };
 
+export const CARDANOBITS_PROJECT = {
+  hasDetailView: true,
+  detailViewUrl: ['/', 'CardanoBits'],
+  name: 'CardanoBits',
+  avatar: 'assets/img/avatar/CardanoBits.jpg',
+  banner: 'assets/img/banner/CardanoBits.png',
+  twitter: 'CardanoBits',
+  facebook: null,
+  instagram: null,
+  discord: null,
+  telegram: 'https://t.me/CardanoBitsOfficial',
+  youtube: null,
+  reddit: null,
+  webpage: 'https://cardanobits.art/',
+  mintedToken: '10.000 tokens minted. Release pending',
+  dateRelease: '',
+  policyID: ['1131301ad4b3cb7deaddbc8f03f77189082a5738c0167e1772233097'],
+  status: STATUS_TO_RELEASE,
+  lastUpdated: '09 April 2021',
+};
+
 export const PROJECT_LIST = [
   SPACEBUDZ_PROJECT,
   FINGERMONSTERS_PROJECT,
-  {
-    name: 'CardanoBits',
-    avatar: 'assets/img/avatar/CardanoBits.jpg',
-    banner: 'assets/img/banner/CardanoBits.png',
-    twitter: 'CardanoBits',
-    facebook: null,
-    instagram: null,
-    discord: null,
-    telegram: 'https://t.me/CardanoBitsOfficial',
-    youtube: null,
-    reddit: null,
-    webpage: 'https://cardanobits.art/',
-    mintedToken: '',
-    dateRelease: '',
-    policyID: null,
-    status: STATUS_TO_RELEASE,
-  },
+  CARDANOBITS_PROJECT,
   {
     name: 'Professor Cardano',
     avatar: 'assets/img/avatar/Professor Cardano.jpg',
