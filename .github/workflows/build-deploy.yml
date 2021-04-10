@@ -40,3 +40,6 @@ jobs:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         BRANCH: gh-pages
         FOLDER: dist/cnft
+        clean: true
+        clean-exclude: |
+          404.html
