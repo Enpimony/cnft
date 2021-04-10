@@ -110,7 +110,7 @@ export const FINGERMONSTERS_PROJECT = {
 };
 
 export const CARDANOBITS_PROJECT = {
-  hasDetailView: true,
+  hasDetailView: false,
   detailViewUrl: ['/', 'CardanoBits'],
   name: 'CardanoBits',
   avatar: 'assets/img/avatar/CardanoBits.jpg',
@@ -123,10 +123,10 @@ export const CARDANOBITS_PROJECT = {
   youtube: null,
   reddit: null,
   webpage: 'https://cardanobits.art/',
-  mintedToken: '10.000 tokens minted. Release pending',
+  mintedToken: '10.000 tokens minted and released',
   dateRelease: '',
   policyID: ['1131301ad4b3cb7deaddbc8f03f77189082a5738c0167e1772233097'],
-  status: STATUS_TO_RELEASE,
+  status: STATUS_RELEASED,
   lastUpdated: '09 April 2021',
 };
 
