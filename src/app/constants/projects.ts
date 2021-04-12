@@ -104,7 +104,10 @@ export const FINGERMONSTERS_PROJECT = {
   dateRelease: '',
   metadata: FINGERMONSTERS_METADATA,
   rarity: FINGERMONSTERS_RARITY,
-  policyID: ['c48399365969a5b3e08640d41bdd6581ecc814ff6cd5bb081556ffb1'],
+  policyID: [
+    'c48399365969a5b3e08640d41bdd6581ecc814ff6cd5bb081556ffb1',
+    '6c96047dc3e440f63131848056ff2175f316eb1ae807f7882c7885f8',
+  ],
   status: STATUS_RELEASED,
   lastUpdated: '08 April 2021',
 };

@@ -101,3 +101,7 @@ venv/
 
 # deploy
 compose/nginx/nginx-ci.conf
+
+# Angular environment
+environment.prod.ts
+environment.ts

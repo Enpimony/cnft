@@ -10,6 +10,10 @@ import { AboutComponent } from './pages/about/about.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { NewsComponent } from './components/news/news.component';
 import { NewsPageComponent } from './pages/news-page/news-page.component';
+import {AngularFireModule} from '@angular/fire';
+import {environment} from '../environments/environment';
+import {AngularFireAnalyticsModule} from '@angular/fire/analytics';
+import {AngularFirestoreModule} from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -24,7 +28,10 @@ import { NewsPageComponent } from './pages/news-page/news-page.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFireAnalyticsModule,
+    AngularFirestoreModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

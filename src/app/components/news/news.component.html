@@ -2,12 +2,12 @@
     <p class="panel-heading">
       
     </p>
-    <a class="panel-block is-active"*ngFor="let news of newsList" > 
+    <a class="panel-block is-active"*ngFor="let news of newsList | async">
         <span class="image is-48x48">
                <img src="{{news.project.icon}}" title="{{news.project.name}}"/>
         </span>
         <span class="newsContent">
-            {{news.date}} - 
+            {{news.date | date}} -
             <a href='{{news.link}}' target="_blank"> {{news.title}}</a>
         </span>
       </a>
