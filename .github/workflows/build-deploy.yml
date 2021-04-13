@@ -30,6 +30,11 @@ jobs:
         key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
         restore-keys: |
           ${{ runner.os }}-node-
+    - name: Set env
+      run: 'echo "$GOOGLE_ANALYTICS_API_KEY" > key'
+      shell: bash
+      env:
+        GOOGLE_ANALYTICS_API_KEY: ${{secrets.GOOGLE_ANALYTICS_API_KEY}}
     - name: Build
       env:
         FIREBASE_API_KEY: ${{ secrets.FIREBASE_API_KEY }}
@@ -41,10 +46,6 @@ jobs:
         FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
         GOOGLE_ANALYTICS_API_KEY: ${{ secrets.GOOGLE_ANALYTICS_API_KEY }}
       run: |
-        'echo "$GOOGLE_ANALYTICS_API_KEY" > key'
-          shell: bash
-          env:
-            GOOGLE_ANALYTICS_API_KEY: ${{secrets.GOOGLE_ANALYTICS_API_KEY}}
         npm install
         npm run-script deploy
       
