@@ -39,9 +39,6 @@ const isProduction = environment === 'prod';
 const targetPath = isProduction
   ? './src/environments/environment.prod.ts'
   : './src/environments/environment.ts';
-console.log('process', process);
-console.log('process.env', process.env);
-console.log('ga', process.env.GOOGLE_ANALYTICS_API_KEY);
 const analyticsCode = isProduction ? process.env.GOOGLE_ANALYTICS_API_KEY : undefined;
 
 //actual content to be compiled dynamically and pasted into respective environment files
