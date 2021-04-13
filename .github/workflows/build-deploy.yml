@@ -41,7 +41,7 @@ jobs:
         FIREBASE_MEASUREMENT_ID: ${{ secrets.FIREBASE_MEASUREMENT_ID }}
         GOOGLE_ANALYTICS_API_KEY: ${{ secrets.GOOGLE_ANALYTICS_API_KEY }}
       run: |
-        'echo "GOOGLE_ANALYTICS_API_KEY" > key'
+        'echo "$GOOGLE_ANALYTICS_API_KEY" > key'
           shell: bash
           env:
             GOOGLE_ANALYTICS_API_KEY: ${{secrets.GOOGLE_ANALYTICS_API_KEY}}
