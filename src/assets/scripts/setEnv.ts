@@ -40,6 +40,7 @@ const targetPath = isProduction
   ? './src/environments/environment.prod.ts'
   : './src/environments/environment.ts';
 
+console.log('KEY', process.env.key);
 console.log('ga', process.env.GOOGLE_ANALYTICS_API_KEY);
 const analyticsCode = isProduction ? process.env.GOOGLE_ANALYTICS_API_KEY : undefined;
 
