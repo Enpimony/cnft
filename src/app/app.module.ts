@@ -14,6 +14,7 @@ import {AngularFireModule} from '@angular/fire';
 import {environment} from '../environments/environment';
 import {AngularFireAnalyticsModule} from '@angular/fire/analytics';
 import {AngularFirestoreModule} from '@angular/fire/firestore';
+import { ArtistComponent } from './pages/artist/artist.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {AngularFirestoreModule} from '@angular/fire/firestore';
     AboutComponent,
     ProjectComponent,
     NewsComponent,
-    NewsPageComponent
+    NewsPageComponent,
+    ArtistComponent
   ],
   imports: [
     BrowserModule,

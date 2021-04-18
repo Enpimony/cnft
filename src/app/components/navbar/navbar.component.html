@@ -22,6 +22,9 @@
       <a class="navbar-item" routerLink="/">
         News
       </a>
+      <a class="navbar-item" routerLink="/artists">
+        NFT Artists
+      </a>
       <a class="navbar-item" routerLink="/projects">
         NFT Projects
       </a>
@@ -34,12 +37,7 @@
         Support the project
       </a>
     </div>
-  </div>
-</nav>
-<div class="modal" [ngClass]="{ 'is-active': openedModal }">
-  <div class="modal-background"></div>
-  <div class="modal-card">
-    <header class="modal-card-head">
+  </div>Projects
       <p class="modal-card-title">Support the project</p>
       <button class="delete" aria-label="close" (click)="closeModal()"></button>
     </header>
