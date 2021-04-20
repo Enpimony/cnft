@@ -1,59 +1,65 @@
 <nav class="navbar" role="navigation" aria-label="main navigation">
-  <div class="navbar-brand">
-    <a class="navbar-item" [routerLink]="['/']">
+	<div class="navbar-brand">
+		<a class="navbar-item" [routerLink]="['/']">
 			<img src="assets/img/mini_logo.png">
-    </a>
+		</a>
 
-    <a
-      role="button"
-      class="navbar-burger"
-      aria-label="menu"
-      aria-expanded="false"
-		  (click)="toggleMenu()"
-    >
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-      <span aria-hidden="true"></span>
-    </a>
-  </div>
+		<a
+				role="button"
+				class="navbar-burger"
+				aria-label="menu"
+				aria-expanded="false"
+				(click)="toggleMenu()"
+		>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+			<span aria-hidden="true"></span>
+		</a>
+	</div>
 
-  <div class="navbar-menu" [ngClass]="{ 'is-active': isMenuOpened }">
-    <div class="navbar-start">
-      <a class="navbar-item" routerLink="/">
-        News
-      </a>
-      <a class="navbar-item" routerLink="/artists">
-        NFT Artists
-      </a>
-      <a class="navbar-item" routerLink="/projects">
-        NFT Projects
-      </a>
+	<div class="navbar-menu" [ngClass]="{ 'is-active': isMenuOpened }">
+		<div class="navbar-start">
+			<a class="navbar-item" routerLink="/">
+				News
+			</a>
+			<a class="navbar-item" routerLink="/artists">
+				NFT Artists
+			</a>
+			<a class="navbar-item" routerLink="/projects">
+				NFT Projects
+			</a>
 
-      <a class="navbar-item" routerLink="/about">
-        About us
-      </a>
+			<a class="navbar-item" routerLink="/about">
+				About us
+			</a>
 
-      <a class="navbar-item -donate" (click)="openModal()">
-        Support the project
-      </a>
-    </div>
-  </div>Projects
-      <p class="modal-card-title">Support the project</p>
-      <button class="delete" aria-label="close" (click)="closeModal()"></button>
-    </header>
-    <section class="modal-card-body">
-      <p>
-        We are doing this as a side project but it would help us a lot to
-        receive some ADA in order to cover the costs. Please feel free to send
-        any amount or NFT to this Shelley address:
-      </p>
+			<a class="navbar-item -donate" (click)="openModal()">
+				Support the project
+			</a>
+		</div>
+	</div>
+</nav>
+<div class="modal" [ngClass]="{ 'is-active': openedModal }">
+	<div class="modal-background"></div>
+	<div class="modal-card">
+		<header class="modal-card-head">
 
-      <div class="address">
-        addr1q9nd87j0nea64lw8a8qh9pddss6g66ezq493lcuujcq9sjj7kmahna7k4wvtv8l64ysaekk5wprw23nap67d8sh54faqsgcwz0
-      </div>
-      <p>
-        Thank you!
-      </p>
-    </section>
-  </div>
+			<p class="modal-card-title">Support the project</p>
+			<button class="delete" aria-label="close" (click)="closeModal()"></button>
+		</header>
+		<section class="modal-card-body">
+			<p>
+				We are doing this as a side project but it would help us a lot to
+				receive some ADA in order to cover the costs. Please feel free to send
+				any amount or NFT to this Shelley address:
+			</p>
+
+			<div class="address">
+				addr1q9nd87j0nea64lw8a8qh9pddss6g66ezq493lcuujcq9sjj7kmahna7k4wvtv8l64ysaekk5wprw23nap67d8sh54faqsgcwz0
+			</div>
+			<p>
+				Thank you!
+			</p>
+		</section>
+	</div>
 </div>
