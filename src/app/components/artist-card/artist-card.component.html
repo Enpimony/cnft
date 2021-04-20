@@ -1,0 +1,103 @@
+<div class="card">
+  <div class="card-image">
+    <figure class="image is-3by1">
+      <img src="{{ artist.banner }}" alt="{{ artist.name }} banner" />
+    </figure>
+  </div>
+  <div class="card-content">
+    <div class="media">
+      <div class="media-left">
+        <figure class="image is-48x48">
+          <img src="{{ artist.avatar }}" alt="{{ artist.name }} avatar" />
+        </figure>
+      </div>
+      <div class="media-content">
+        <p class="title is-4">{{ artist.name }}</p>
+        <p class="subtitle is-6">@{{ artist.twitter }}</p>
+      </div>
+    </div>
+
+    <div class="content">
+      <!--			<div class="tags has-addons">-->
+      <!--				<span class="tag is-dark">Status</span>-->
+      <!--				<span class="tag is-success" *ngIf="project.status === STATUS_RELEASED">Released</span>-->
+      <!--				<span class="tag is-info" *ngIf="project.status === STATUS_IN_PROGRESS">In progress</span>-->
+      <!--				<span class="tag is-light" *ngIf="project.status === STATUS_TO_RELEASE">Pending</span>-->
+      <!--			</div>-->
+      <div class="columns">
+        <div class="column is-half" *ngIf="artist.webpage">
+          <a href="{{ artist.webpage }}" target="_blank">Official web</a>
+        </div>
+        <div class="column is-half" *ngIf="artist.hasDetailView">
+          <a [routerLink]="artist.detailViewUrl">More info</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer class="card-footer">
+    <span
+      class="card-footer-item is-success"
+      *ngIf="artist.status === STATUS_RELEASED"
+      >Released</span
+    >
+    <span
+      class="card-footer-item is-info"
+      *ngIf="artist.status === STATUS_IN_PROGRESS"
+      >In progress</span
+    >
+    <span
+      class="card-footer-item is-light"
+      *ngIf="artist.status === STATUS_TO_RELEASE"
+      >Pending</span
+    >
+    <a
+      href="https://twitter.com/{{ artist.twitter }}"
+      target="_blank"
+      class="card-footer-item"
+      *ngIf="artist.twitter"
+      ><i class="fab fa-twitter"></i
+    ></a>
+    <a
+      href="{{ artist.facebook }}"
+      target="_blank"
+      class="card-footer-item"
+      *ngIf="artist.facebook"
+      ><i class="fab fa-facebook"></i
+    ></a>
+    <a
+      href="{{ artist.instagram }}"
+      target="_blank"
+      class="card-footer-item"
+      *ngIf="artist.instagram"
+      ><i class="fab fa-instagram"></i
+    ></a>
+    <a
+      href="{{ artist.discord }}"
+      target="_blank"
+      class="card-footer-item"
+      *ngIf="artist.discord"
+      ><i class="fab fa-discord"></i
+    ></a>
+    <a
+      href="{{ artist.telegram }}"
+      target="_blank"
+      class="card-footer-item"
+      *ngIf="artist.telegram"
+      ><i class="fab fa-telegram"></i
+    ></a>
+    <a
+      href="{{ artist.youtube }}"
+      target="_blank"
+      class="card-footer-item"
+      *ngIf="artist.youtube"
+      ><i class="fab fa-youtube"></i
+    ></a>
+    <a
+      href="{{ artist.reddit }}"
+      target="_blank"
+      class="card-footer-item"
+      *ngIf="artist.reddit"
+      ><i class="fab fa-reddit"></i
+    ></a>
+  </footer>
+</div>
