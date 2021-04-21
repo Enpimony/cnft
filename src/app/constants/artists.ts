@@ -14,12 +14,57 @@ export const GLITCH_CREATION_ARTIST = {
   youtube: null,
   reddit: null,
   webpage: null, // 'https://spacebudz.io/',
-  tokenInfo: "10.000 tokens minted and released",
-  priceInfo:
-    "Starting at 10 ADA each, increasing the price every 1000 tokens (10, 20, ..., 90, 100)",
+  tokenInfo: "",
+  priceInfo: "",
   dateRelease: "",
   status: STATUS_RELEASED,
   lastUpdated: "April 2021",
 };
 
-export const ARTIST_LIST = [GLITCH_CREATION_ARTIST];
+export const CREEPY_CARDANO_ARTIST = {
+  hasDetailView: false,
+  detailViewUrl: ["/", "CreepyCardano"],
+  name: "CreepyCardano",
+  avatar: "assets/img/avatar/Creepy Cardano.jpg",
+  banner: "assets/img/banner/Creepy Cardano.jpeg",
+  twitter: "CreepyCardano",
+  facebook: null,
+  instagram: null,
+  discord: null, //"https://discord.gg/bNKj3KQB"
+  telegram: null, // 'https://t.me/spacebudz',
+  youtube: null,
+  reddit: null,
+  webpage: null, // 'https://spacebudz.io/',
+  tokenInfo: "",
+  priceInfo: "",
+  dateRelease: "",
+  status: STATUS_RELEASED,
+  lastUpdated: "April 2021",
+};
+
+export const BLIZZEFFECT_ARTIST = {
+  hasDetailView: false,
+  detailViewUrl: ["/", "BlizzEffect"],
+  name: "BlizzEffect",
+  avatar: "assets/img/avatar/Blizz Effect.jpg",
+  banner: "assets/img/banner/Blizz Effect.jpeg",
+  twitter: "blizzeffect",
+  facebook: null,
+  instagram: null,
+  discord: "https://t.co/jjIkLgNYqb?amp=1", //"https://discord.gg/bNKj3KQB"
+  telegram: null, // 'https://t.me/spacebudz',
+  youtube: null,
+  reddit: null,
+  webpage: null, // 'https://spacebudz.io/',
+  tokenInfo: "",
+  priceInfo: "",
+  dateRelease: "",
+  status: STATUS_RELEASED,
+  lastUpdated: "April 2021",
+};
+
+export const ARTIST_LIST = [
+  GLITCH_CREATION_ARTIST,
+  CREEPY_CARDANO_ARTIST,
+  BLIZZEFFECT_ARTIST,
+];
